@@ -20,7 +20,7 @@ public class VideojuegoService {
     }
 
     public Videojuego obtenerPorId(Long id) {
-        return repository.findById(id).orElseThrow(() -> new ResourceNotFoundException("Videojuego no encontrado con ID: " + id));
+        return repository.findById(id).orElseThrow(() -> new ResourceNotFoundException("Videojuego no encontrado con ID: prueba action " + id));
     }
 
     public Videojuego crear(Videojuego videojuego) {
